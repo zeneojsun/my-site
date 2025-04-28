@@ -9,6 +9,11 @@ import Link from "next/link"
 import Image from "next/image"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import HeroSection from "@/components/home/HeroSection"
+import ServicesSection from "@/components/home/ServicesSection"
+import WhyWorkWithMeSection from "@/components/home/WhyWorkWithMeSection"
+import TestimonialSection from "@/components/home/TestimonialSection"
+import FinalCTASection from "@/components/home/FinalCTASection"
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger)
@@ -102,37 +107,11 @@ export default function Home() {
       </header>
 
       <main className="flex-1 pt-20">
-        {/* Hero Section */}
-        <section ref={heroRef} className="container py-32">
-          <div className="max-w-4xl mx-auto">
-            <div className="mb-8 animate-gsap">
-              <Image
-                src="/placeholder.svg?height=80&width=80"
-                alt="Profile"
-                width={80}
-                height={80}
-                className="rounded-full border-4 border-primary/10"
-              />
-            </div>
-            <h1 className="text-4xl md:text-6xl font-display font-bold leading-tight mb-6 animate-gsap">
-              Elevating your design career through
-              <span className="text-gradient px-1">personalized mentorship</span> and
-              <span className="text-gradient px-1">expert coaching</span>.
-            </h1>
-            <p className="text-xl text-muted-foreground mb-10 max-w-2xl animate-gsap">
-              Transforming designers into industry leaders with tailored guidance, practical skills, and strategic
-              career development.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 animate-gsap">
-              <Button size="lg" className="rounded-full hover-lift">
-                Book a discovery call
-              </Button>
-              <Button size="lg" variant="outline" className="rounded-full hover-lift">
-                Explore services <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </div>
-          </div>
-        </section>
+        <HeroSection />
+        <ServicesSection />
+        <WhyWorkWithMeSection />
+        <TestimonialSection />
+        <FinalCTASection />
 
         {/* Client Logos Section */}
         <section className="py-16 bg-muted/50">
