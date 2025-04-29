@@ -11,12 +11,12 @@ const testimonials = [
 
 export default function ResultsSection() {
   return (
-    <section className="w-full py-16 bg-gray-100 fade-in">
+    <section className="w-full py-20 bg-gray-100 fade-in">
       <div className="max-w-4xl mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">Results</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <h2 className="text-3xl md:text-5xl font-extrabold text-center mb-14 tracking-tight">Results</h2>
+        <div className="grid md:grid-cols-2 gap-10">
           {testimonials.map((t, i) => (
-            <blockquote key={i} className="bg-white rounded-xl shadow p-8 text-lg text-gray-800 italic flex flex-col justify-between">
+            <blockquote key={i} className="bg-white rounded-2xl shadow p-10 text-lg text-gray-800 italic flex flex-col justify-between">
               <span>“{t.quote}”</span>
               <span className="mt-4 text-gray-600 not-italic text-base">{t.author}</span>
             </blockquote>

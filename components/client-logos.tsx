@@ -58,8 +58,8 @@ export function ClientLogos() {
           <h3 className="font-display font-bold mb-1">{designer.name}</h3>
           <p className="text-sm text-muted-foreground mb-1">{designer.title}</p>
           <p className="text-sm font-medium text-primary">{designer.company}</p>
-        </div>
-      ))}
+          </div>
+        ))}
     </div>
   )
 }
