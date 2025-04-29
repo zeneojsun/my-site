@@ -2,13 +2,13 @@ import Link from "next/link";
 
 export default function FinalCTASection() {
   return (
-    <section className="w-full py-16 bg-white text-center">
-      <h3 className="text-2xl md:text-3xl font-bold mb-6">Ready to elevate your product or career?</h3>
+    <section className="w-full py-16 bg-white text-center fade-in">
+      <h3 className="text-2xl md:text-3xl font-bold mb-8">Ready to elevate your product or career?</h3>
       <Link
         href="/contact"
-        className="inline-block px-8 py-3 bg-black text-white rounded-full font-semibold hover:bg-gray-800 transition"
+        className="inline-block px-8 py-4 bg-blue-600 text-white text-lg font-semibold rounded-full shadow hover:bg-blue-700 transition"
       >
-        Schedule a Free Call
+        Book a Free Call
       </Link>
     </section>
   );

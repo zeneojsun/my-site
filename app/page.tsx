@@ -10,9 +10,9 @@ import Image from "next/image"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import HeroSection from "@/components/home/HeroSection"
+import AboutSection from "@/components/home/AboutSection"
 import ServicesSection from "@/components/home/ServicesSection"
-import WhyWorkWithMeSection from "@/components/home/WhyWorkWithMeSection"
-import TestimonialSection from "@/components/home/TestimonialSection"
+import ResultsSection from "@/components/home/ResultsSection"
 import FinalCTASection from "@/components/home/FinalCTASection"
 
 if (typeof window !== "undefined") {
@@ -108,9 +108,9 @@ export default function Home() {
 
       <main className="flex-1 pt-20">
         <HeroSection />
+        <AboutSection />
         <ServicesSection />
-        <WhyWorkWithMeSection />
-        <TestimonialSection />
+        <ResultsSection />
         <FinalCTASection />
 
         {/* Client Logos Section */}
