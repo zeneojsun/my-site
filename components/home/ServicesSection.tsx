@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const services = [
   {
     icon: (
@@ -33,19 +35,25 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="w-full py-20 bg-white fade-in">
+    <motion.section
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+      className="w-full py-20 bg-white dark:bg-[#1a1a1c] fade-in"
+    >
       <div className="max-w-5xl mx-auto px-4">
-        <h2 className="text-3xl md:text-5xl font-extrabold text-center mb-14 tracking-tight">Services</h2>
+        <h2 className="text-3xl md:text-5xl font-extrabold text-center mb-14 tracking-tight dark:text-white">Services</h2>
         <div className="grid md:grid-cols-3 gap-10">
           {services.map((s, i) => (
-            <div key={i} className="bg-gray-50 rounded-2xl shadow p-10 text-center flex flex-col items-center hover:shadow-xl transition">
+            <div key={i} className="bg-gray-50 dark:bg-gray-900 rounded-2xl shadow p-10 text-center flex flex-col items-center hover:shadow-xl transition-transform duration-200 hover:-translate-y-1">
               {s.icon}
-              <h3 className="font-semibold text-xl mb-2">{s.title}</h3>
-              <p className="text-gray-600 text-base">{s.desc}</p>
+              <h3 className="font-semibold text-xl mb-2 dark:text-gray-200">{s.title}</h3>
+              <p className="text-gray-600 dark:text-gray-400 text-base">{s.desc}</p>
             </div>
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 } 

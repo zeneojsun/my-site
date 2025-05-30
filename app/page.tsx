@@ -14,6 +14,7 @@ import AboutSection from "@/components/home/AboutSection"
 import ServicesSection from "@/components/home/ServicesSection"
 import ResultsSection from "@/components/home/ResultsSection"
 import FinalCTASection from "@/components/home/FinalCTASection"
+import DarkModeToggle from "@/components/DarkModeToggle"
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger)
@@ -84,6 +85,7 @@ export default function Home() {
             <Button variant="outline" className="rounded-full hover-lift-sm">
               Free Consultation
             </Button>
+            <DarkModeToggle />
           </nav>
           <Button variant="ghost" size="icon" className="md:hidden">
             <svg

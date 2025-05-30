@@ -7,7 +7,7 @@ const designers = [
     name: "Sarah Chen",
     title: "Senior Product Designer",
     company: "Google",
-    image: "/placeholder.svg?height=80&width=80"
+    image: "/image-1.jpg"
   },
   {
     name: "Michael Rodriguez",
